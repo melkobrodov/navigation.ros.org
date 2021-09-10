@@ -24,3 +24,4 @@ the best navigation performance.
    packages/configuring-amcl.rst
    packages/configuring-recovery-server.rst
    packages/configuring-regulated-pp.rst
+   packages/configuring-master-controller.rst

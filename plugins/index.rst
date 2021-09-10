@@ -88,10 +88,22 @@ Controllers
 |                          |                    | variation on the pure pursuit    | Differential          |
 |                          |                    | algorithm with adaptive features.|                       |
 +--------------------------+--------------------+----------------------------------+-----------------------+
+| `Master Controller`_     | Alex Melkoborodov  | Controller which checks the angle| Differential,         |
+|                          |                    | between the robot's current      | Omnidirectional       |
+|                          |                    | orientation and the path. If the |                       |
+|                          |                    | angle is large than the          |                       |
+|                          |                    | threshold, then MC will rotate to|                       |
+|                          |                    | path orientation. If the angle is|                       |
+|                          |                    | below threshold, then the loaded |                       |
+|                          |                    | local trajectory plugin (like DWB|                       |
+|                          |                    | or TEB) is going to continue to  |                       |
+|                          |                    | work.                            |                       |
++--------------------------+--------------------+----------------------------------+-----------------------+
 
 .. _DWB Controller: https://github.com/ros-planning/navigation2/tree/main/nav2_dwb_controller
 .. _TEB Controller: https://github.com/rst-tu-dortmund/teb_local_planner
 .. _Regulated Pure Pursuit: https://github.com/ros-planning/navigation2/tree/main/nav2_regulated_pure_pursuit_controller
+.. _Master Controller: https://github.com/ros-planning/navigation2/tree/main/nav2_master_controller
 
 Planners
 ========
